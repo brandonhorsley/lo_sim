@@ -19,8 +19,10 @@ class QuantumState(dict):
         return ' + \n'.join(term_strings)
 
     @property
-    def n_systems(self):
-        return len(next(iter(self.keys())))
+    def n_systems(self): #Won't necessarily resolve since will still return first iteration?
+        iterator=iter(self.keys())
+        #return len(next(iter(self.keys())))
+        return len(next(iterator))
 
     def normalise(self):
 
@@ -63,8 +65,10 @@ class PhotonicState(QuantumState):
         return all_modes
 
     def is_fixed_photon_number(self):
-        p = self.photon_number
+        #p = self.photon_number
+        iterator=iter(self.keys())
         for modes in self.keys():
+            p = len(next(iterator))
             if len(modes) != p:
                 return False
         return True
