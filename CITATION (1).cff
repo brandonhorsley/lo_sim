@@ -1,0 +1,25 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: lo_sim
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Brandon
+    family-names: Horsley
+    email: brandonhorsley99@hotmail.co.uk
+    affiliation: University of Bristol
+repository-code: 'https://github.com/brandonhorsley/lo_sim'
+abstract: >-
+  python library for simulation and visualisation of linear
+  optical, fixed photon number, quantum photonic circuits.
+
+
+  Checkout example notebooks for usage. It is currently
+  under development, but hopefully will become a proper
+  package one day. Feel free to email me if you have any
+  questions about it.
+commit: bfaaa2e
